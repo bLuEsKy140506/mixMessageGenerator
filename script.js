@@ -47,3 +47,10 @@ const quotes = [
     "Practice gratitude and stay positive."
   ];
   
+  const randomIndex = (array) => {
+    return Math.floor(Math.random()*array.length)
+  }
+
+console.log(randomIndex(quotes));
+console.log(randomIndex(bibleVerses));
+console.log(randomIndex(lifeTips));
