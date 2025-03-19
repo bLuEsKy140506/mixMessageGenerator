@@ -51,6 +51,23 @@ const quotes = [
     return Math.floor(Math.random()*array.length)
   }
 
-console.log(randomIndex(quotes));
-console.log(randomIndex(bibleVerses));
-console.log(randomIndex(lifeTips));
+// console.log(randomIndex(quotes));
+// console.log(randomIndex(bibleVerses));
+// console.log(randomIndex(lifeTips));
+
+
+const generateMessage = () => {
+    const randomQuote = quotes[randomIndex(quotes)];
+    const randomVerse = bibleVerses[randomIndex(bibleVerses)];
+    const randomTip = lifeTips[randomIndex(lifeTips)];
+  
+    console.log("🌟 Daily Inspiration 🌟\n");
+    console.log(`💡 Quote: "${randomQuote}"`);
+    console.log(`📖 Verse: "${randomVerse}"`);
+    console.log(`✅ Life Tip: "${randomTip}"\n\n`);
+  }
+
+generateMessage();
+generateMessage();
+generateMessage();
+generateMessage();
